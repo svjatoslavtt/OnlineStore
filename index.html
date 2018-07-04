@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- The above 2 meta tags "must" come first in the head; any other head content must come "after" these tags -->
+	<title>Online store</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/main.js">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" media="all" href="css/animate.css">
+	<script src="js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+</head>
+
+<body>
+
+	<section id="header">
+
+		<div class="wrap">
+
+			<div class="logo">
+				<h1>
+					<a href="#">Portland</a>
+				</h1>
+			</div>
+
+			<nav class="navBar">
+				<ul>
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Devices</a>
+					</li>
+					<li>
+						<a href="#">Delivery & Payment</a>
+					</li>
+					<li>
+						<a href="#">Cuarantee</a>
+					</li>
+					<li>
+						<a href="#">About us</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="header_signin">
+
+				<div class="basket">
+					<h3>
+						<i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+						cart
+					</h3>
+				</div>
+
+				<div class="count">
+					<input type="text" class="input-count" placeholder="0" disabled>
+				</div>
+
+				<div class="sign_in">
+					<button class="btn_signin">sign in</button>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section id="header_nav">
+
+		<div class="wrap">
+
+			<div class="navBar">
+				<ul>
+					<li>
+						<a href="#">top sales</a>
+					</li>
+					<li>
+						<a href="#">brand focus</a>
+					</li>
+					<li class="active">
+						<a href="#">hi-tech</a>
+					</li>
+					<li>
+						<a href="#">best sellers</a>
+					</li>
+					<li>
+						<a href="#">projects</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="support">
+				<h4>support</h4>
+			</div>
+
+			<div class="search">
+				<button class="btn-search">
+					<i class="fa fa-search" aria-hidden="true"></i>
+					I'm looking for ...
+				</button>
+
+				<div class="open-search">
+					<input type="text" class="input-search" placeholder="Search">
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</section>
+
+	<section id="carousel">
+
+		<div class="wrapper">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<button class="btn-carousel">buy now</button>
+						<img src="img/banner.png" alt="banner">
+					</div>
+
+					<div class="item">
+						<button class="btn-carousel">buy now</button>
+						<img src="img/banner.png" alt="banner">
+					</div>
+
+					<div class="item">
+						<button class="btn-carousel">buy now</button>
+						<img src="img/banner.png" alt="banner">
+					</div>
+
+					<div class="item">
+						<button class="btn-carousel">buy now</button>
+						<img src="img/banner.png" alt="banner">
+					</div>
+				</div>
+
+				<!-- Right indicator -->
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="navigation">
+
+		<section id="sorting">
+
+			<div class="wrap">
+
+				<div class="sort">
+
+					<div class="sortby">
+						<h3>sort by:</h3>
+					</div>
+
+					<div class="match">
+						<nav>
+							<ul id="dropdown">
+								<li>
+									<a class="a_arrow" href="javascript:void(0)">best match</a>
+
+									<ul class="dropdown">
+										<li>
+											<a href="#">item1</a>
+										</li>
+										<li>
+											<a href="#">item2</a>
+										</li>
+										<li>
+											<a href="#">item3</a>
+										</li>
+										<li>
+											<a href="#">item4</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+
+				<div class="key_price">
+
+					<div class="keywords">
+						<h3>keywords</h3>
+						<input type="text" class="key" placeholder="Tablet">
+					</div>
+
+					<div class="price">
+						<h3>price</h3>
+						<input type="text" class="min_price" maxlength="5" placeholder="10" id="numbers" name="numbers" onchange="Your_function()">
+						<span>*</span>
+						<input type="text" class="max_price" placeholder="1000">
+						<input type="checkbox" id="cbox1" class="checkbox" value="first_checkbox" checked hidden>
+						<label for="cbox1">Free Shipping</label>
+					</div>
+
+				</div>
+
+				<div class="country">
+
+					<div class="shipto">
+						<h3>ship to</h3>
+					</div>
+
+					<div class="usa">
+						<nav>
+							<ul>
+								<li>
+									<a class="a_arrow" href="javascript:void(0)">usa</a>
+
+									<ul class="dropdown">
+										<li>
+											<a href="#">item1</a>
+										</li>
+										<li>
+											<a href="#">item2</a>
+										</li>
+										<li>
+											<a href="#">item3</a>
+										</li>
+										<li>
+											<a href="#">item4</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<div class="wrap">
+
+			<section id="main">
+
+				<div class="side_panel">
+
+					<section id="filters">
+
+						<div class="wrapper">
+
+							<nav>
+
+								<ul class="container">
+
+									<li class="menu">
+										<ul>
+											<li class="button">
+												<a href="javascript:void(0)" class="box1">Top Sales</a>
+											</li>
+											<li id="test" class="dropdown">
+												<ul>
+													<li>
+														<a href="javascript:void(0)">cell phones</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">cameras</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">computers</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">tv. audio</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">video games</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+
+									<li class="menu">
+										<ul>
+											<li class="button">
+												<a href="javascript:void(0)" class="box1">Brand Focus</a>
+											</li>
+											<li class="dropdown">
+												<ul>
+													<li>
+														<a href="javascript:void(0)">cell phones</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">cameras</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">computers</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">tv. audio</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">video games</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+
+									<li class="menu">
+										<ul>
+											<li class="button">
+												<a href="javascript:void(0)" class="box1">Hi-Tech</a>
+											</li>
+											<li class="dropdown">
+												<ul>
+													<li>
+														<a href="javascript:void(0)">cell phones</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">cameras</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">computers</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">tv. audio</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">video games</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+
+									<li class="menu">
+										<ul>
+											<li class="button">
+												<a href="javascript:void(0)" class="box1">Home</a>
+											</li>
+											<li class="dropdown">
+												<ul>
+													<li>
+														<a href="javascript:void(0)">cell phones</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">cameras</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">computers</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">tv. audio</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">video games</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+
+									<li class="menu">
+										<ul>
+											<li class="button">
+												<a href="javascript:void(0)" class="box1">Sale</a>
+											</li>
+											<li class="dropdown test-display-none">
+												<ul>
+													<li>
+														<a href="javascript:void(0)">cell phones</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">cameras</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">computers</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">tv. audio</a>
+													</li>
+													<li>
+														<a href="javascript:void(0)">video games</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+
+							</nav>
+
+						</div>
+
+					</section>
+
+					<section id="available">
+
+						<div class="wrapper">
+
+							<div class="main">
+
+								<div class="available">
+									<h2>available</h2>
+								</div>
+
+								<ul class="radio_ul">
+									<li>
+										<input type="radio" name="shop" id="radio1" class="radio" checked>
+										<label for="radio1">In Storage</label>
+										<span>45</span>
+									</li>
+
+									<li>
+										<input type="radio" name="shop" id="radio2" class="radio">
+										<label for="radio2">In Online-Shop</label>
+										<span>12</span>
+									</li>
+								</ul>
+
+								<div class="brands">
+									<h2>brands</h2>
+									<a href="javascript:void(0)">all</a>
+								</div>
+
+								<ul class="checkbox_ul">
+									<li>
+										<input type="checkbox" id="checkbox1" checked>
+										<label for="checkbox1">Apple</label>
+										<span>32</span>
+									</li>
+									<li>
+										<input type="checkbox" id="checkbox2">
+										<label for="checkbox2">JBL</label>
+										<span>14</span>
+									</li>
+									<li>
+										<input type="checkbox" id="checkbox3">
+										<label for="checkbox3">Bose</label>
+										<span>3</span>
+									</li>
+									<li>
+										<input type="checkbox" id="checkbox4">
+										<label for="checkbox4">Nest</label>
+										<span>5</span>
+									</li>
+								</ul>
+
+							</div>
+
+						</div>
+
+					</section>
+
+					<section id="condition">
+
+						<div class="wrapper">
+
+							<div class="main">
+
+								<div class="condition">
+									<h2>condition</h2>
+									<a href="javascript:void(0)">see all</a>
+								</div>
+
+								<ul class="checkbox_ul">
+									<li>
+										<input type="checkbox" id="checkbo1" checked>
+										<label for="checkbo1">New</label>
+									</li>
+									<li>
+										<input type="checkbox" id="checkbo2">
+										<label for="checkbo2">Manufacturer Refurbished</label>
+									</li>
+									<li>
+										<input type="checkbox" id="checkbo3">
+										<label for="checkbo3">Seller Refurbished</label>
+									</li>
+									<li>
+										<input type="checkbox" id="checkbo4" checked>
+										<label for="checkbo4">Used</label>
+									</li>
+									<li>
+										<input type="checkbox" id="checkbo5">
+										<label for="checkbo5">For Parts or not Working</label>
+									</li>
+								</ul>
+
+							</div>
+
+						</div>
+
+					</section>
+
+					<section id="delivery">
+
+						<div class="wrapper">
+
+							<div class="main">
+
+								<div class="delivery">
+									<h2>delivery options</h2>
+								</div>
+
+								<div class="choise">
+
+									<div class="free">
+										<input type="radio" name="price" id="radio3" class="radio" checked>
+										<label for="radio3">free</label>
+									</div>
+
+									<div class="price">
+										<input type="radio" name="price" id="radio4" class="radio">
+										<label for="radio4">$4.99</label>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</section>
+
+				</div>
+
+				<div class="content">
+
+					<section id="content">
+
+						<div class="row">
+
+							<div class="product">
+								<span class="layout">
+									<img src="img/ico_product.png" alt="ico">
+								</span>
+
+								<div class="blick">
+									<img src="img/product1.png" alt="product1">
+								</div>
+
+								<h2 class="h2_prod1">
+									<a href="javascript:void(0)">Apple TV 32GB</a>
+								</h2>
+
+								<h3>black</h3>
+								<p>$49.99</p>
+							</div>
+
+							<div class="product">
+								<span class="layout">
+									<img src="img/ico_product.png" alt="ico">
+								</span>
+
+								<div class="blick">
+									<img src="img/product2.png" alt="product2">
+								</div>
+
+								<h2 class="h2_prod2">
+									<a href="javascript:void(0)">Pebble Time</a>
+								</h2>
+
+								<h3>red</h3>
+								<p>$29.99</p>
+							</div>
+
+							<div class="product">
+								<span class="layout">
+									<img src="img/ico_product.png" alt="ico">
+								</span>
+
+								<div class="blick">
+									<img src="img/product3.png" alt="product3">
+								</div>
+
+								<h2 class="h2_prod3">
+									<a href="javascript:void(0)">Zendure 4-Port USB</a>
+								</h2>
+
+								<h3>white</h3>
+								<p>$49.99</p>
+							</div>
+
+						</div>
+
+						<div class="row row-two">
+
+							<div class="product">
+								<span class="layout">
+									<img src="img/ico_product.png" alt="ico">
+								</span>
+
+								<div class="blick_two">
+									<img src="img/product4.png" alt="product1">
+								</div>
+
+								<div class="h2_prod">
+									<h2 class="h2_prod4">
+										<a href="javascript:void(0)">Withings Smart Body
+											<br>Analyzer ws-50</a>
+									</h2>
+								</div>
+
+								<h3 class="h3_prod4">black</h3>
+								<p class="p_prod4">$39.99</p>
+							</div>
+
+							<div class="product_long">
+
+								<span class="layout">
+									<img src="img/ico_product.png" alt="ico">
+								</span>
+
+								<div class="blick_long">
+									<img src="img/product5.png" alt="product1">
+								</div>
+
+								<div class="h2_prod">
+									<h2 class="h2_prod5">
+										<a href="javascript:void(0)">JBL Charge 2+</a>
+									</h2>
+								</div>
+
+								<h3 class="h3_prod5">black</h3>
+
+								<div class="group_btn">
+
+									<div id="btn1">
+										<button class="btn1">16 gb</button>
+									</div>
+
+									<div id="btn2">
+										<button class="btn2">buy now</button>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="row row-three">
+
+							<div class="product">
+								<span class="layout">
+									<img src="img/ico_product.png" alt="ico">
+								</span>
+
+								<div class="blick">
+									<img src="img/product6.png" alt="product1">
+								</div>
+
+								<h2 class="h2_prod6">
+									<a href="javascript:void(0)">Ollo Clip New</a>
+								</h2>
+
+								<h3 class="h3_prod6">silver</h3>
+								<p class="p_prod6">$19.99</p>
+							</div>
+
+							<div class="product">
+								<span class="layout">
+									<img src="img/ico_product.png" alt="ico">
+								</span>
+
+								<div class="blick_three">
+									<img src="img/product7.png" alt="product1">
+								</div>
+
+								<div class="h2_prod">
+									<h2 class="h2_prod7">
+										<a href="javascript:void(0)">Fibit Charge HR Heart Rate and Activity Tracker</a>
+									</h2>
+								</div>
+
+								<h3 class="h3_prod7">black</h3>
+								<p class="p_prod7">$19.99</p>
+							</div>
+
+							<div class="product">
+								<span class="layout">
+									<img src="img/ico_product.png" alt="ico">
+								</span>
+
+								<div class="blick_three">
+									<img src="img/product8.png" alt="product1">
+								</div>
+
+								<div class="h2_prod">
+									<h2 class="h2_prod8">
+										<a href="javascript:void(0)">Apple Watch Sport 38mm Silver Aluminum Case</a>
+									</h2>
+								</div>
+
+								<h3 class="h3_prod8">white</h3>
+								<p class="p_prod8">$49.99</p>
+							</div>
+
+						</div>
+
+						<div class="row row-three">
+
+							<div class="product">
+								<span class="layout">
+									<img src="img/ico_product.png" alt="ico">
+								</span>
+
+								<div class="blick">
+									<img src="img/product9.png" alt="product1">
+								</div>
+
+								<h2 class="h2_prod7">
+									<a href="javascript:void(0)">Bose SoundLink On-Ear Headphones</a>
+								</h2>
+
+								<h3 class="h3_prod9">white</h3>
+								<p class="p_prod9">$119.99</p>
+							</div>
+
+							<div class="product">
+								<span class="layout">
+									<img src="img/ico_product.png" alt="ico">
+								</span>
+
+								<div class="blick_three">
+									<img src="img/product10.png" alt="product1">
+								</div>
+
+								<div class="h2_prod">
+									<h2 class="h2_prod7">
+										<a href="javascript:void(0)">Sonos Play-1 Wireless HiFi System</a>
+									</h2>
+								</div>
+
+								<h3 class="h3_prod10">black</h3>
+								<p class="p_prod10">$99.99</p>
+							</div>
+
+							<div class="product product_last">
+
+								<span class="layout-last">
+									<img src="img/ico_product.png" alt="ico">
+								</span>
+
+								<div class="h2_prod">
+									<h2 class="h2_prod11">
+										<a href="javascript:void(0)">Nest Learning Thermostat 3rd Generation</a>
+									</h2>
+								</div>
+
+								<p class="p_prod11">$99.99</p>
+
+								<div class="blick_quat">
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</section>
+
+				</div>
+
+			</section>
+
+			<section id="select-page">
+
+				<div class="link-left">
+					<button class="left"></button>
+				</div>
+
+				<div class="page">
+					<ul>
+						<li>
+							<a href="javascript:void(0)">1</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">2</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">3</a>
+						</li>
+						<li class="active">
+							<a href="javascript:void(0)">4</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">5</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">6</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">7</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">8</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="link-right">
+					<button class="right"></button>
+				</div>
+
+			</section>
+
+			<section id="best-sellers">
+
+				<div class="best">
+					<h3>best sellers</h3>
+				</div>
+
+				<div class="dress">
+
+					<div class="dress1">
+						<div class="dress-img">
+							<img src="img/best-img-one.png" alt="one">
+						</div>
+						<h2>
+							<a href="javascript:void(0)">Beanie</a>
+						</h2>
+						<h3>green</h3>
+						<div class="common-price">
+							<span class="price">$39.99</span>
+							<span class="sale">$29.99</span>
+						</div>
+					</div>
+
+					<div class="dress1">
+						<div class="dress-img">
+							<img src="img/best-img-two.png" alt="one">
+						</div>
+						<h2>
+							<a href="javascript:void(0)">T-Shirt WIth a Print</a>
+						</h2>
+						<h3>dark blue</h3>
+						<div class="common-price">
+							<span class="price">$39.99</span>
+							<span class="sale">$29.99</span>
+						</div>
+					</div>
+
+					<div class="dress1">
+						<div class="dress-img">
+							<img src="img/best-img-three.png" alt="one">
+						</div>
+						<h2>
+							<a href="javascript:void(0)">Pile-Lined Hooded Jacket</a>
+						</h2>
+						<h3>dark blue</h3>
+						<div class="common-price">
+							<span class="price">$39.99</span>
+							<span class="sale">$29.99</span>
+						</div>
+					</div>
+
+					<div class="dress1">
+						<div class="dress-img">
+							<img src="img/best-img-four.png" alt="one">
+						</div>
+						<h2>
+							<a href="javascript:void(0)">Trainers</a>
+						</h2>
+						<h3>space grey</h3>
+						<div class="common-price">
+							<span class="price">$39.99</span>
+							<span class="sale">$29.99</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+	</section>
+
+	<section id="testimo">
+
+		<div class="wrap">
+
+			<div class="logo">
+				<h1>What Our Customers Have to Say</h1>
+				<span class="logo-span">Couple of Words About This Stories Section</span>
+			</div>
+
+			<div class="customers">
+
+				<div class="customer">
+
+					<div class="avatar">
+
+						<div class="foto">
+							<img src="img/customer-one.png" alt="one">
+						</div>
+
+						<div class="name">
+							<h3>
+								<a href="javascript:void(0)">Celia Fields</a>
+							</h3>
+							<span>UX Expert</span>
+						</div>
+
+					</div>
+
+					<div class="message">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</div>
+
+				</div>
+
+				<div class="customer">
+
+					<div class="avatar">
+
+						<div class="foto">
+							<img src="img/customer-two.png" alt="two">
+						</div>
+
+						<div class="name">
+							<h3>
+								<a href="javascript:void(0)">Alexander Lee</a>
+							</h3>
+							<span>Founder</span>
+						</div>
+
+					</div>
+
+					<div class="message">Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled
+						heartily.</div>
+
+				</div>
+
+				<div class="customer">
+
+					<div class="avatar">
+
+						<div class="foto">
+							<img src="img/customer-three.png" alt="three">
+						</div>
+
+						<div class="name">
+							<h3>
+								<a href="javascript:void(0)">Lenora Sandoval</a>
+							</h3>
+							<span>Product Manager</span>
+						</div>
+
+					</div>
+
+					<div class="message">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section id="footer">
+
+		<div class="wrap">
+
+			<div class="footer-top">
+
+				<div class="logo">
+					<a href="javascript:void(0)">Portland</a>
+				</div>
+
+				<ul>
+					<li>
+						<a href="javascript:void(0)">home</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">shop</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">team</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">about us</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">contacts</a>
+					</li>
+				</ul>
+
+				<div class="social">
+					<div class="twitter">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</div>
+					<div class="facebook">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+					</div>
+					<div class="google">
+						<i class="fa fa-google-plus" aria-hidden="true"></i>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="footer-bottom">
+
+				<span class="text-left">She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on
+					a Friday.</span>
+
+				<ul>
+					<li>
+						<a href="javascript:void(0)">privacy policy</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)"> terms and conditions</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
